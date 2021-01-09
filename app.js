@@ -1,7 +1,7 @@
 const popup = document.querySelector('.popup');
 const expandImg = document.querySelector('.expand-img');
 const conImg = document.querySelectorAll('.container img');
-const closebtn = document.querySelector('.closebtn');
+//const closebtn = document.querySelector('.closebtn');
 
 //for each image (looping through)
 conImg.forEach(conImg =>{
@@ -29,7 +29,7 @@ popup.addEventListener('click', (e) =>{
     }
 });
 //searchInput
-const searchBox = document.getElementById('filterInput');
+/*const searchBox = document.getElementById('filterInput');
 searchBox.addEventListener('keyup', (e) =>{
     const filterValue = document.getElementById('filterInput').value.toLowerCase();
 });
@@ -45,4 +45,4 @@ for(i=0; i<li.length; i++){
     }else{
         li[i].style.opacity = 0;
     }
-}
+}*/
