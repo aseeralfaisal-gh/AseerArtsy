@@ -24,25 +24,21 @@ popup.addEventListener('click', (e) =>{
     if(e.target.classList.contains('popup')){
     popup.classList.remove('open');
     expandImg.classList.remove('open');
-    //to understand what's going on
     //console.log(e);
     }
 });
 //searchInput
-/*const searchBox = document.getElementById('filterInput');
-searchBox.addEventListener('keyup', (e) =>{
-    const filterValue = document.getElementById('filterInput').value.toLowerCase();
-});
-
-let ul = document.getElementById('names');
-let li = ul.querySelectorAll('img.collection-item');
-
-for(i=0; i<li.length; i++){
-    let a = li[i].getElementsByTagName('h3')[0];
-    //condition
-    if(a.innerHTML.toLowerCase().indexOf(filterValue) > -1){
-        li[i].style.opacity = 1;
+const filterInput = document.getElementById('filterInput');
+filterInput.addEventListener('keyup', () =>{ 
+const filterinputValue = filterInput.value.toLowerCase();
+const gallery = document.getElementById('gallery');
+const container = gallery.getElementsByClassName('container');
+for (let i=0; i<container.length; i++){
+    const title = container[i].querySelector('h3');
+    if(title.innerHTML.toLowerCase().indexOf(filterinputValue) != -1){
+        container[i].style.display="";
     }else{
-        li[i].style.opacity = 0;
+        container[i].style.display = "none";
     }
-}*/
+}
+});
