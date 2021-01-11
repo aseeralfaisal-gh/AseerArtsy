@@ -20,7 +20,7 @@ nav{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    background: rgba(1, 15, 29, 0.877);
+    background: linear-gradient(black, rgba(2, 2, 51, 0.932));
     background-position: 100%;
     align-items: center;
     border-style: groove;
@@ -53,7 +53,7 @@ nav ul li a:hover{
     text-shadow: rgba(245, 222, 179, 0.466) 3px 3px 3px;
 }
 body{
-    background-image: url("./views/23964.png");
+    background-image: url("./views/23964-1.png");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: round;
@@ -178,7 +178,7 @@ body{
   }
   .filterInput{
     position: relative;
-    background-color: #010d1ac4;
+    background-color: rgba(2, 2, 31, 0.849);
     width: 27%;
     height: 5vh;
     margin-top: 7%;
