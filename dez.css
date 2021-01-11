@@ -7,7 +7,7 @@
 .logo{
     color: aliceblue;
     cursor: context-menu;
-    font-family: Roboto;
+    font-family: Poppins;
     font-size: 250%;
     letter-spacing: 15px;
     text-shadow: rgba(32, 138, 187, 0.527) 3px 3px 3px;
@@ -20,17 +20,16 @@ nav{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    background-color: rgba(3, 5, 29, 0.91);
+    background: rgba(1, 15, 29, 0.877);
+    background-position: 100%;
     align-items: center;
-    border-style: double;
-    border-color: rgba(245, 222, 179, 0.116);
-    border-width: 2px;
+    border-style: groove;
     border-left: 0;
     border-right: 0;
     border-top: 0;
-    box-shadow: rgba(255, 255, 255, 0.37) 3px 3px 3px;
-    object-fit: cover;
-    font-family: Poppins;
+    border-color: rgba(0, 47, 255, 0.815);
+    border-width: 2px;
+    box-shadow: rgba(17, 107, 190, 0.452) 3px 3px 3px;
 }
 nav ul{
     display: flex;
@@ -54,8 +53,10 @@ nav ul li a:hover{
     text-shadow: rgba(245, 222, 179, 0.466) 3px 3px 3px;
 }
 body{
-    background-image: url("./views/b1.jpg");
+    background-image: url("./views/23964.png");
+    background-size: cover;
     background-attachment: fixed;
+    background-repeat: round;
 }
 .gallery{
     float: left;
@@ -81,7 +82,7 @@ body{
     border-style: double;
     border-width: 3px;
     border-radius: 20px;
-    box-shadow: rgba(255, 255, 255, 0.171) 3px 3px 3px;
+    box-shadow: rgba(17, 107, 190, 0.452) 3px 1px 3px;
     transition: all 0.2s ease-in-out;
 }
 .container img:hover{
@@ -99,12 +100,12 @@ body{
     letter-spacing: 3px;
     border-radius: 10px;
     width: 80%;
-    background-color: rgba(0, 0, 0, 0.589);
+    background-color: rgba(2, 19, 29, 0.685);
     color: aliceblue;
     border-style: double;
     border-width: 3px;
     border-color: rgba(240, 248, 255, 0.342);
-    box-shadow: rgba(255, 255, 255, 0.171) 3px 3px 3px;
+    box-shadow: rgba(17, 107, 190, 0.452) 3px 1px 3px;
 }
 .popup{
     background:rgba(0, 5, 20, 0.8);
@@ -177,15 +178,15 @@ body{
   }
   .filterInput{
     position: relative;
-    background-color: #041629f5;
-    width: 20%;
-    height: 4vh;
+    background-color: #010d1ac4;
+    width: 27%;
+    height: 5vh;
     margin-top: 7%;
     margin-left: 38%;
     flex-direction: column;
     border-radius: 10px;
     text-align: center;
-    box-shadow: none;
+    box-shadow: rgba(17, 107, 190, 0.452) 3px 2px 2px;
     border-style: double;
     border-color: rgba(69, 115, 241, 0.952);
     border-width: 2px;
@@ -204,3 +205,84 @@ body{
   .filterInput:focus{
       outline-style: none;
   }
+@media(max-width: 1250px){
+    .filterInput{
+        margin-top: 100px;
+        transition: all 0.2s;
+    }
+}
+@media(max-width: 1000px){
+    .gallery{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .filterInput{
+        margin-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 27%;
+        font-size: 12px;
+        transition: all 0.2s ease-out;
+    }
+}
+@media(max-width: 850px){
+    .gallery{
+        grid-template-columns: repeat(3, 1fr);
+        transition: all 0.2s;
+    }
+    .container h3{
+        font-size: 11px;
+        transition: all 0.2s ease-out;
+    }
+    .logo{
+        transform: scale(0.9);
+        transition: all 0.2s ease out;
+    }
+
+}
+@media(max-width: 692px){
+    .logo{
+        transform: scale(0.8);
+        transition: all 0.2s ease-out;
+    }
+    nav ul{
+        font-size: small;
+        width: 25%;
+        transition: all 0.2s ease-out;
+    }
+
+}
+@media(max-width: 650px){
+    nav ul{
+        font-size: smaller;
+        width: 30%;
+        transition: all 0.2s ease-out;
+    }
+    .logo{
+        transform: scale(0.7);
+        transition: all 0.2s ease-out;
+        letter-spacing: 10px;
+    }
+    .gallery{
+        grid-template-columns: repeat(2, 1fr);
+        transition: all 0.2s;
+    }
+
+}
+@media(max-width: 627px){
+    .logo{
+        transform: scale(0.6);
+        transition: all 0.2s ease-out;
+        letter-spacing: 5px;
+    }
+    .filterInput{
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 30%;
+        transition: all 0.2s ease-out;
+    }
+    .container h3{
+        font-size: 10px;
+        transition: all 0.2s ease-out;
+    }
+
+}
