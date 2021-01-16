@@ -476,3 +476,7 @@ body{
   object-fit: cover;
   transition: all 0.2s ease-out;
 }
+.aboutSegment p{
+  padding-left: 15%;
+  padding-right: 15%;
+}
